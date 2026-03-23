@@ -13,10 +13,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 .panel a {
-    margin-left: 30px;
+    margin-left: 5px;
     padding: 10px;
     color: white;
     border-radius: 50px;
@@ -29,29 +28,94 @@ main {
     flex: 1;
 }
 
+.premain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .main-page {
+    padding-left: 50px;
     color: black;
     background-color: green;
     border-radius: 20px;
     margin-top: 30px;
     display: flex;
+    justify-content: center;
     transition: left 0.9s ease-in;
+    max-width: 90%;
+    align-items: center;
 }
-.main-page p {
-    margin-top: 210px;
-    margin-right: 10px;
-    text-align: right;
-    font-size: large;
+.otz {
+    color: black;
+    background-color: rgb(255, 103, 1);
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    transition: left 0.9s ease-in;
+    max-width: 90%;
+    align-items: center;
+    text-shadow: 0 0 5px white;
     font-style:italic;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.main-page2 {
+    color: black;
+    background-color: rgb(255, 103, 1);
+    border-radius: 20px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    transition: left 0.9s ease-in;
+    max-width: 90%;
+    align-items: center;
+}
+.main-page2 p {
+    padding-left: 50px;
+    font-size: 20px;
+    text-shadow: 0 0 5px white;
+    font-style:italic;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 20px auto;
+}
+.in {
+    border-radius: 20px;
+    /* делаем картинку адаптивной */
+    max-width: 50%;
+    object-fit: cover;
+    height: auto;
+}
+
+.in2 {
+    border-radius: 20px;
+    /* делаем картинку адаптивной */
+    max-width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+
+.main-page p {
+    text-align: right;
+    font-size: 40px;
+    text-shadow: 0 0 5px white;
+    font-style:italic;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 20px;
 }
 footer {
     color: black;
     padding-bottom: 10px;
+    margin-top: 20px;
     padding-left: 20px;
     background-color: rgba(255, 255, 255, 0.792);
     transition: 0.6s;
+    padding-top: 10px;
 }
 footer:hover {
     background-color: transparent;
@@ -61,4 +125,35 @@ footer:hover {
 .panel a:hover {
     box-shadow: 0 0 4px 4px white;
     background-color: brown;
+}
+
+/* Адаптивные стили для мобильных устройств */
+@media (max-width: 962px) {
+    .main-page {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: stretch; /* растягиваем по ширине контейнера */
+    }
+    .in {
+        max-width: 100%; /* картинка занимает всю ширину контейнера */
+        width: 100%; /* картинка занимает всю ширину контейнера */
+        height: auto; /* сохраняем пропорции картинки */
+    }
+    .main-page p {
+        padding-left: unset;
+        font-size: 24px;
+        text-align: center;
+        margin-right: 0;
+    }
+    .main-page2 p {
+        padding-left: unset;
+        font-size: 18px;
+        text-align: center;
+        margin-right: 0;
+    }
+    .main-page2 {
+        flex-direction: column;
+        max-width: 100%;
+        align-items: stretch; /* растягиваем по ширине контейнера */
+    }
 }
