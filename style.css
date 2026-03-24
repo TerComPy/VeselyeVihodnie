@@ -36,7 +36,6 @@ main {
 }
 
 .main-page {
-    padding-left: 50px;
     color: black;
     background-color: green;
     border-radius: 20px;
@@ -74,14 +73,48 @@ main {
     max-width: 90%;
     align-items: center;
 }
+.system-message {
+    color: black;
+    margin-top: 20px;
+    background-color: rgb(225, 0, 255);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.system-message-buttons {
+    color: black;
+    margin-top: 20px;
+    background-color: rgb(225, 0, 255);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.system-message-buttons a {
+    text-decoration: none;
+    color: white;
+    background-color:rgb(81, 0, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+
 .main-page2 p {
-    padding-left: 50px;
     font-size: 20px;
     text-shadow: 0 0 5px white;
     font-style:italic;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     margin: 20px auto;
+    padding-left: 8px;
 }
 .in {
     border-radius: 20px;
@@ -128,7 +161,7 @@ footer:hover {
 }
 
 /* Адаптивные стили для мобильных устройств */
-@media (max-width: 962px) {
+@media (max-width: 1263px) {
     .main-page {
         flex-direction: column;
         max-width: 100%;
