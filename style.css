@@ -98,6 +98,95 @@ main {
     gap: 10px;
     align-items: center;
 }
+.system-message-forms {
+    color: black;
+    margin-top: 20px;
+    background-color: rgb(225, 0, 255);
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center; 
+}
+
+.system-message-forms form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tipical {
+    border: none;
+    background-color:springgreen;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+}
+
+.tipical:focus {
+    outline: none;
+}
+
+.tipical::placeholder {
+    color:rgb(81, 0, 255)
+}
+
+.buttontip {
+    border: none;
+    background-color:burlywood;
+    padding: 20px;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.imgclass {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sys-prof {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.system-profile {
+    background-color:crimson;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.image-profile {
+    margin-top: 10px;
+    width: 180px;
+}
+
+.imgclass::file-selector-button {
+    background-color: blue;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.buttontip:hover {
+    cursor: pointer;
+}
 
 .system-message-buttons a {
     text-decoration: none;
@@ -149,10 +238,30 @@ footer {
     background-color: rgba(255, 255, 255, 0.792);
     transition: 0.6s;
     padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.system-message-forms label {
+    text-align: center;
+}
+.system-message-forms input[type="date"] {
+    color: blue; /*Цвет текста календаря*/
+}
+
 footer:hover {
     background-color: transparent;
     color: transparent;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    background-color:chartreuse;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    background-color: cornflowerblue;
 }
 
 .panel a:hover {
